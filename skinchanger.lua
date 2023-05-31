@@ -1,5 +1,5 @@
 script_name("SkinChanger by Yakowlev")
-script_version("31.05.2023")
+script_version("01.06.2023")
 
 require "lib.moonloader"
 
