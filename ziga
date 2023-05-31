@@ -1,11 +1,11 @@
 local ziga = false
 function main()
-	sampAddChatMessage("[ZIGA]{6495ED} Зига успешно загружена. {FFFFFF}Чтобы её кинуть, введите: {F08080}/ziga", 0xF08080)
+	sampAddChatMessage("[ZIGA]{6495ED} Р—РёРіР° СѓСЃРїРµС€РЅРѕ Р·Р°РіСЂСѓР¶РµРЅР°. {FFFFFF}Р§С‚РѕР±С‹ РµС‘ РєРёРЅСѓС‚СЊ, РІРІРµРґРёС‚Рµ: {F08080}/ziga", 0xF08080)
 	sampRegisterChatCommand('ziga', function() ziga = not ziga end)
 	while true do
 		if ziga then
 			taskPlayAnim(PLAYER_PED, "Pointup_loop", "ON_LOOKERS", 12, true, false, false, false, -1)
-			sampAddChatMessage("[Ziga] Зига успешно кинута. Чтобы остановить анимку нажми F.")
+			sampAddChatMessage("[Ziga] Р—РёРіР° СѓСЃРїРµС€РЅРѕ РєРёРЅСѓС‚Р°. Р§С‚РѕР±С‹ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ Р°РЅРёРјРєСѓ РЅР°Р¶РјРё F.")
 			if wasKeyPressed(0x46) and not sampIsCursorActive() then
 				ziga = false
 				clearCharTasks(1)
